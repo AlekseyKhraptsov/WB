@@ -2,21 +2,22 @@ package main
 
 import "fmt"
 
-/*
-Дана структура Human (с произвольным набором полей и методов).
-Реализовать встраивание методов в структуре Action от родительской структуры Human (аналог наследования).
-*/
+//Дана структура Human (с произвольным набором полей и методов).
+//Реализовать встраивание методов в структуре Action от родительской структуры Human (аналог наследования).
 
+// Структура
 type Human struct {
 	Name string
 	Race string
 }
 
+// Метод
 func (h Human) PrintInfo() {
 	fmt.Println("Name:", h.Name)
 	fmt.Println("Race:", h.Race)
 }
 
+// Делаем наследование
 type Action struct {
 	Human
 }
