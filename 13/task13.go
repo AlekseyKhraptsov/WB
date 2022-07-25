@@ -12,5 +12,5 @@ func main() {
 	a = a + b
 	b = a - b
 	a = a - b
-	fmt.Println("Вариант 1: ", a, " ", b)
+	fmt.Println("Вариант 2: ", a, " ", b)
 }
